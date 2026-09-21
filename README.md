@@ -17,7 +17,7 @@ getColorName('#010082', { exactOnly: true });   // null
 getColorHex('navy blue');                       // "#000080"
 ```
 
-Install: `npm i git+ssh://git@github.com:softinvo/gta-shared-colors.git`
+Install: `npm i git+https://github.com/softinvo-tech/gta-shared-colors.git`
 
 ## Flutter (app)
 
@@ -35,7 +35,7 @@ pubspec:
 dependencies:
   gta_colors:
     git:
-      url: git@github.com:softinvo/gta-shared-colors.git
+      url: https://github.com/softinvo-tech/gta-shared-colors.git
       path: dart
 ```
 
