@@ -1,0 +1,26 @@
+{
+  "name": "@gta/colors",
+  "version": "1.0.0",
+  "description": "Shared GTA color name <-> hex table (TypeScript + Dart)",
+  "type": "module",
+  "main": "ts/src/index.ts",
+  "types": "ts/src/index.ts",
+  "exports": {
+    ".": "./ts/src/index.ts"
+  },
+  "files": [
+    "ts/src",
+    "colors.json"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "test": "npm run generate && tsx --test ts/test/colors.test.ts && cd dart && dart test"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
